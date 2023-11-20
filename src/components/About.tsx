@@ -1,5 +1,6 @@
-import '../styles/components/about.sass'
+import Button from './form/Button'
 import FlavioTosin from '../assets/img/ft.png'
+import '../styles/components/about.sass'
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
 
             Minha expertise vai além do código. Sou um estrategista na busca pelas melhores soluções, avaliando minuciosamente as demandas do projeto e as inovações disponíveis no mercado.
           </p>
-          <button type='button'>Ver Qualificações</button>
+          <Button type='button'>Ver Qualificações</Button>
         </div>
         <img src={FlavioTosin} alt="Flavio Tonon" className='flavio-tosin' />
       </div>

@@ -1,13 +1,13 @@
 @use '../mixins.sass'
-@use '../button.sass'
 
 main
-  margin: 4rem 0
+  margin: 1.5rem 0
   @include mixins.flexCenter
   justify-content: space-evenly
+  height: calc( 100vh - 100px )
 
   .banner-img
-    height:350px
+    height: 350px
 
   .info-container
     text-align: center
@@ -20,6 +20,6 @@ main
 
     li
       margin-top: 10px
-    
+
     a
       font-size: 1.5rem
