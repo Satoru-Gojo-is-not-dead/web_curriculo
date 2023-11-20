@@ -39,7 +39,7 @@ const Form = () => {
 
   return (
 
-    <section >
+    <section id="contact">
       <h2>Entre em contato!</h2>
       <div className="contact-container">
         <img src={formSvg} />

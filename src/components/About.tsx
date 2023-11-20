@@ -4,7 +4,7 @@ import '../styles/components/about.sass'
 
 const About = () => {
   return (
-    <section>
+    <section id="about-me">
       <h2>Sobre mim</h2>
       <div className="container">
         <div className="info-container">

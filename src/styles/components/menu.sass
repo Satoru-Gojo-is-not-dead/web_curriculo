@@ -1,0 +1,13 @@
+@use '../variables.sass'
+@use '../mixins.sass'
+  
+nav 
+  ul
+    @include mixins.flexCenter
+    gap: 10px
+
+    a
+      transition: .3s ease-out
+
+    a:hover
+      border-bottom: 1px solid variables.$primary-color
