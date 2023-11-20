@@ -1,0 +1,27 @@
+@use '../variables.sass'
+@use '../mixins.sass'
+  
+header
+  @include mixins.flexCenter
+  justify-content: space-between
+  padding: 2rem
+  text-transform: uppercase
+  border-bottom: 1px solid variables.$primary-color
+  box-shadow: 0px 0px 5px 2px variables.$primary-color
+
+  nav ul
+    @include mixins.flexCenter
+    gap: 10px
+
+    a
+      transition: .5s ease-in
+
+    a:hover
+      border-bottom: 1px solid variables.$primary-color
+  
+  .logo
+    @include mixins.flexCenter
+    font-size:  1.5rem
+    text-transform: capitalize
+    gap: 10px
+    
