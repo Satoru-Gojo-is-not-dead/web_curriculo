@@ -5,8 +5,29 @@ import App from './App.tsx'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './styles/main.sass'
 
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import Home from './routes/home.tsx';
+import Portfolio from './routes/Portfolio.tsx';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/portfolio',
+        element: <Portfolio/>
+      }
+    ]
+  }
+])
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

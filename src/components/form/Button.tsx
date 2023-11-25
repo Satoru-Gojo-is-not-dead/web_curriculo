@@ -10,9 +10,9 @@ interface ButtonProps {
 const Button: FunctionComponent<ButtonProps> = ({type, children, id}) => {
   return (
     <>
-      <button type={type} id={id}>
+      <a href='/portfolio' className="button-pattern" type={type} id={id}>
       {children}
-      </button>
+      </a>
     </>
   )
 }
