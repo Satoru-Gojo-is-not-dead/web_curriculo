@@ -15,7 +15,7 @@ const About = () => {
 
             Minha expertise vai além do código. Sou um estrategista na busca pelas melhores soluções, avaliando minuciosamente as demandas do projeto e as inovações disponíveis no mercado.
           </p>
-          <Button type='button'>Ver Qualificações</Button>
+          <Button path='/qualifications' type='button'>Ver Qualificações</Button>
         </div>
         <img src={FlavioTosin} alt="Flavio Tonon" className='flavio-tosin' />
       </div>

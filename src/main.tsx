@@ -7,7 +7,8 @@ import './styles/main.sass'
 
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './routes/home.tsx';
-import Portfolio from './routes/Portfolio.tsx';
+import Qualifications from './routes/Qualifications.tsx';
+import Experiences from './routes/Experiences.tsx';
 
 const router = createBrowserRouter([
   {
@@ -19,8 +20,12 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/portfolio',
-        element: <Portfolio/>
+        path: '/qualifications',
+        element: <Qualifications/>
+      },
+      {
+        path: '/experiences',
+        element: <Experiences/>
       }
     ]
   }

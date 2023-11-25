@@ -1,6 +1,6 @@
 import { urlApi } from "../constants/api"
 
-const Portfolio = () => {
+const Qualifications = () => {
 
   const getQualifications = async () => {
     const response = await fetch(urlApi + "/api/get_qualifications.php", {
@@ -16,8 +16,10 @@ const Portfolio = () => {
   getQualifications()
 
   return (
-    <div>Portfolio</div>
+    <>
+      
+    </>
   )
 }
 
-export default Portfolio
+export default Qualifications

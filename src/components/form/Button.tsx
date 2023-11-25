@@ -1,18 +1,20 @@
 import { FunctionComponent } from 'react'
+import { Link } from 'react-router-dom'
 import '../../styles/components/form/button.sass'
 
 interface ButtonProps {
   type:'button' | 'submit' | 'reset',
+  path: string
   children?: string,
   id?: string,
 }
 
-const Button: FunctionComponent<ButtonProps> = ({type, children, id}) => {
+const Button: FunctionComponent<ButtonProps> = ({type, path, children, id}) => {
   return (
     <>
-      <a href='/portfolio' className="button-pattern" type={type} id={id}>
+      <Link to={path} className="button-pattern" type={type} id={id}>
       {children}
-      </a>
+      </Link>
     </>
   )
 }
