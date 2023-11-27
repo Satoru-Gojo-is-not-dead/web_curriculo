@@ -1,0 +1,25 @@
+@use '../mixins.sass'
+
+main
+  margin: 1.5rem 0
+  @include mixins.flexCenter
+  justify-content: space-evenly
+  height: calc( 100vh - 100px )
+
+  .banner-img
+    height: 350px
+
+  .info-container
+    text-align: center
+
+    h1
+      font-size: 2.5rem
+
+    p
+      font-size: 1.5em
+
+    li
+      margin-top: 10px
+
+    a
+      font-size: 1.5rem

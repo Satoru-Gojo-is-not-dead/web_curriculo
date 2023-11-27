@@ -1,0 +1,11 @@
+@use '../variables.sass'
+@use '../mixins.sass'
+  
+header
+  @include mixins.flexCenter
+  justify-content: space-between
+  padding: 2rem
+  text-transform: uppercase
+  border-bottom: 1px solid variables.$primary-color
+  box-shadow: 0px 0px 5px 2px variables.$primary-color
+  height: 100px
