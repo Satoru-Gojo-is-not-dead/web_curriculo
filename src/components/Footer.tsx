@@ -1,5 +1,5 @@
 import Logo from './Logo'
-import Menu from './Menu'
+import { Link } from 'react-router-dom'
 import '../styles/components/footer.sass'
 
 const Footer = () => {
@@ -7,7 +7,12 @@ const Footer = () => {
     <footer>
       <div className="footer-container">
         <Logo />
-        <Menu />
+        <ul className="footer-menu">
+          <li><Link to="/">Início</Link></li>
+          <li><a href="#about-me">Sobre mim</a></li>
+          <li><Link to="/experiences">Portfolio</Link></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
       </div>
       <p className='copyright'>Satoru isn't dead &copy; 2023</p>
     </footer>

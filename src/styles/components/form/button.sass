@@ -1,4 +1,5 @@
 @use '../../variables.sass'
+@use '../../mixins.sass'
   
 .button-pattern
   padding: 10px 15px 
@@ -12,6 +13,12 @@
   transition: .3s ease-out
   font-size:.9rem
   margin: .5rem 0
+  position: relative
+    
+  @include mixins.tablet
+    left: 37%
+  @include mixins.celular
+    left: 25%
 
   &:hover
     border: 3px solid variables.$primary-color

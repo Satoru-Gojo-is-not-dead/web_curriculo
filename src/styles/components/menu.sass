@@ -2,12 +2,47 @@
 @use '../mixins.sass'
   
 nav 
-  ul
+  .laptop-menu
     @include mixins.flexCenter
     gap: 10px
+    
+    @include mixins.tablet
+      display: none
 
     a
       transition: .3s ease-out
 
     a:hover
       border-bottom: 1px solid variables.$primary-color
+
+  .bi.bi-list
+    display: none
+    font-size: 35px
+    cursor: pointer
+    @include mixins.tablet
+      display: block
+    
+
+  .bi.bi-x-lg
+    cursor: pointer
+    position: absolute
+    right: 10%
+    top: 5%
+    font-size: 2rem
+
+  .menu-mobile
+    position: absolute
+    background-color: #1e1e1e
+    left: 0
+    top: 0
+    width: 100%
+    height: 100vh
+    text-align: center
+    @include mixins.flexCenter
+    
+    li
+      margin-bottom: 15px
+      font-size: 1rem
+
+  .fade
+    display: none

@@ -6,17 +6,28 @@ main
   justify-content: space-evenly
   height: calc( 100vh - 100px )
 
+  @include mixins.tablet 
+    justify-content: center
+
   .banner-img
     height: 350px
+
+    @include mixins.tablet
+      display: none
 
   .info-container
     text-align: center
 
     h1
       font-size: 2.5rem
+    
+      @include mixins.celular
+        font-size: 2rem
 
     p
       font-size: 1.5em
+      @include mixins.celular
+        font-size: 1em
 
     li
       margin-top: 10px

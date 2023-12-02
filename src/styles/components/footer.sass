@@ -8,7 +8,18 @@ footer
     @include mixins.flexCenter
     justify-content: space-around
     padding: 2rem
+
+    @include mixins.tablet
+      flex-direction: column
+      align-items: start
+      gap: 20px
     
+  .footer-menu
+    display: flex
+    gap: 10px
+  
+    @include mixins.tablet
+      flex-direction: column
         
   .copyright
     text-align: center
