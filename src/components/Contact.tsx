@@ -37,7 +37,7 @@ const Form = () => {
         email: emailValue,
         phone: phoneValue,
         message: messageValue,
-        tokenRecaptcha: tokenRecaptcha,
+        token_recaptcha: tokenRecaptcha,
       }),
       headers: {
         "Content-Type": "application/json"
@@ -97,7 +97,7 @@ const Form = () => {
           ></textarea>
           <ReCAPTCHA
             ref={recaptchaRef}
-            sitekey="6Ld_1h8pAAAAAKKyMIioj4v2OsW8OVbW6J1TxVeT"
+            sitekey="6LdUtiQpAAAAAJr1pgZeB0H8w7_CeA4HjPhX0g0P"
             onChange={(value: string | null) => {
               setTokenRecaptcha(value);
             }}

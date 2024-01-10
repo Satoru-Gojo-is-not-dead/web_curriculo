@@ -5,8 +5,10 @@ main
   @include mixins.flexCenter
   justify-content: space-evenly
   height: calc( 100vh - 100px )
+  max-width: 1200px
+  margin: 0 auto
 
-  @include mixins.tablet 
+  @include mixins.tablet
     justify-content: center
 
   .banner-img
@@ -20,7 +22,7 @@ main
 
     h1
       font-size: 2.5rem
-    
+
       @include mixins.celular
         font-size: 2rem
 
