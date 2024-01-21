@@ -1,24 +1,38 @@
 @use '../mixins.sass'
 
 section
+  max-width: 1400px
+  margin: 0 auto
   margin-top: 3rem
 
 h2
   font-size: 2rem
   text-align: center
+  @include mixins.tablet
+    margin-bottom: 2rem
 
 .container
   @include mixins.flexCenter
   padding: 1rem 2rem
   gap: 20px
+
+  @include mixins.tablet
+    flex-direction: column-reverse
+    padding: 0 1rem
   
 
   .info-container
     width: 50%
 
+    @include mixins.tablet
+      width: 100%
+
     .about-me
       line-height: 1.5
       margin-bottom: 20px
+
+      @include mixins.tablet
+        text-align: center
 
   .flavio-tosin
    height: 300px

@@ -1,8 +1,13 @@
 @use '../variables.sass'
-  
+@use '../mixins.sass'
+
 #container
   display: block
   padding: 2rem 3rem
+  margin-bottom: 3rem
+
+  @include mixins.tablet
+    padding: 1rem
 
   #qualifications-container
     margin-top: 1rem
@@ -11,10 +16,11 @@
     gap: 15px
     margin-bottom: 1rem
 
-    .qualification-box
-      height: 150px
-      min-height: fit-content
+    @include mixins.tablet
+      grid-template-columns: 1fr
 
+    .qualification-box
+      min-height: fit-content
       border: 1px solid variables.$primary-color
       border-radius: 20px
       padding: 1rem
@@ -23,3 +29,13 @@
       &:hover
         box-shadow: 0px 0px 10px 2px variables.$primary-color
         border: 1px solid transparent
+
+      &.show-all
+        grid-column: span 2
+        
+#show-all-button
+  margin-top: 1rem
+  display: block
+  width: fit-content
+  margin-left: auto
+  margin-right: auto

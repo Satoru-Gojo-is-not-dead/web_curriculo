@@ -1,12 +1,24 @@
 @use '../mixins.sass'
 
 .contact-container
+  max-width: 1400px
+  margin: 2rem auto
   @include mixins.flexCenter
   justify-content: space-evenly
-  margin: 2rem 0
+  @include mixins.tablet
+  padding: 2rem
 
   form
     width: 30%
+    @include mixins.tablet
+      width: 70%
+    @include mixins.celular
+      width: 90%
+
+    #rc-anchor-container
+      width: 100%
 
   img
     height: 350px
+    @include mixins.tablet
+      display: none

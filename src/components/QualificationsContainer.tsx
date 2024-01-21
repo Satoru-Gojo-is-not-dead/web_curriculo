@@ -3,6 +3,7 @@ import { urlApi } from "../constants/api";
 import { QualificationsType } from "../types/qualifications";
 import QualificationsBox from "./QualificationsBox";
 import "../styles/components/qualifications.sass";
+import Footer from "./Footer";
 
 const QualificationsContainer = () => {
   const [qualifications, setQualifications] = useState<QualificationsType[]>([]);
@@ -66,6 +67,7 @@ const QualificationsContainer = () => {
         ))}
       </div>
       <button className="button-pattern center-element" onClick={handleBoxestoShow}>Mostrar tudo</button>
+      <Footer/>
     </main>
 
   )
