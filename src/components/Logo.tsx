@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom'
 import '../styles/components/logo.sass'
 
 const Logo = () => {
   return (
-    <div className="logo">
+    <Link to="/" className="logo">
       <i className="bi bi-braces"></i>
       <p>Flávio Tonon</p>
-    </div>
+    </Link>
   )
 }
 

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 import '../styles/components/menu.sass'
+import { Link as ScrollLink } from 'react-scroll';
 
 const Menu = () => {
 
@@ -26,9 +27,9 @@ const Menu = () => {
     <nav>
       <ul className="laptop-menu">
         <li><Link to="/">Início</Link></li>
-        <li><Link to="/#about-me">Sobre mim</Link></li>
+        <li><a href="#about-me" >Sobre mim</a></li>
         <li><Link to="/experiences">Portfolio</Link></li>
-        <li><Link to="/#contact">Contato</Link></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
       <i className="bi bi-list" onClick={handleMenuMobile}></i>
       <div className="menu-mobile fade" ref={menuMobile}>

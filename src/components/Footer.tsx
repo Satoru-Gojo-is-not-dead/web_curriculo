@@ -14,7 +14,7 @@ const Footer = () => {
           <li><a href="#contact">Contato</a></li>
         </ul>
       </div>
-      <p className='copyright'>Satoru isn't dead &copy; 2023</p>
+      <p className='copyright'>Flávio Tonon &copy; 2023</p>
     </footer>
   )
 }

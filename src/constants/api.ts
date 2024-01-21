@@ -1,1 +1,1 @@
-export const urlApi = 'http://127.0.0.1:90/api_tosin/'
+export const urlApi = 'http://127.0.0.1/api_curriculo'

@@ -95,13 +95,15 @@ const Form = () => {
             placeholder="Sua mensagem aqui"
             ref={messageRef}
           ></textarea>
-          <ReCAPTCHA
-            ref={recaptchaRef}
-            sitekey="6LdUtiQpAAAAAJr1pgZeB0H8w7_CeA4HjPhX0g0P"
-            onChange={(value: string | null) => {
-              setTokenRecaptcha(value);
-            }}
-          />
+          <div className="col-10">
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey="6LdUtiQpAAAAAJr1pgZeB0H8w7_CeA4HjPhX0g0P"
+              onChange={(value: string | null) => {
+                setTokenRecaptcha(value);
+              }}
+            />
+          </div>
           <button
             className="button-pattern"
             type="submit"
