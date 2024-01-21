@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 import '../styles/components/menu.sass'
-import { Link as ScrollLink } from 'react-scroll';
 
 const Menu = () => {
 
